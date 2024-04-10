@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC ATIVIDADE</title>
+</head>
+<body>
+    <h3>Álcool ou Gasolina? </h3>
+    
+
+
+
+
+  <script>
+  //  Seu carro tem um tanque de 40 litros, com gasolina e usando todo o tanque voce fez um caminho de 480 quilometros, qual foi o consumo de gasolina?
+var tanqueGasolina = 40
+var caminhoComGasolina = 480
+var consumoGasolina = caminhoComGasolina/tanqueGasolina
+document.write("foi necessario usar " + (consumoGasolina) + " Litros de gasolina <br>");
+
+//já com alcool o mesmo tem 40 litros fez um caminhocomAlcool de 300 quilometros, qual o consumoDeAlcool?
+var tanqueAlcool = 40
+var caminhoDeAlcool = 300
+var consumoAlcool = caminhoDeAlcool/tanqueAlcool
+
+document.write("Já utilizando Álcool o gasto foi de " + Math.round(consumoAlcool) + " Litros <br> ") //usando o metodo para arendondar o número.
+
+//o precoDaGasolina é 2.90 e o precoDoAlcool 2.40, qual é o precoPorKilometro tanto do alcoo quanto da gasolina e qual é o menor deles?
+
+var valorGasolina = 2.90
+var valorAlcool = 2.40
+var totalgastoGasolina = valorGasolina/consumoGasolina
+var totalgastoAlcool = valorAlcool/ consumoAlcool
+
+if (totalgastoGasolina < totalgastoAlcool){
+    document.write("o preço por KM da Gasolina é menor. " + totalgastoGasolina.toFixed(2) + "R$ <br>")
+} else{
+    document.write("o preço por KM do Álcool é menor. " + totalgastoAlcool.toFixed(2) + "R$ <br>")
+}
+
+document.write(`o preço por KM da Gasolina é de ${totalgastoGasolina.toFixed(2)} R$ e o do Álcool é de ${totalgastoAlcool.toFixed(2)} R$ <br>`);
+
+
+
+  </script>  
+</body>
+</html>

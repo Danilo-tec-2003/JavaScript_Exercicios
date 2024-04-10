@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções e parametros</title>
+</head>
+<body>
+    
+
+<script>
+    const pularLinha = function (){
+        document.write("<br>");
+        document.write("<hr>") //segunda alteração para por linha no meio dos br
+        document.write("<br>"); //alteração para pular duas linhas
+    }
+
+    //função recebendo parametro que será a frase a ser apresentada no naveador.
+const mostra = function (frase) {
+    document.write ("<big>" + frase + "</big>");
+    pularLinha();
+};
+
+const ano = 2024;
+
+mostra("Eu nasci em = " + (ano-20));
+mostra("Rebeca nasceu em = " + (ano-22));
+mostra("Toninho nasceu em = " + (ano-0));
+
+
+
+</script>
+</body>
+</html>

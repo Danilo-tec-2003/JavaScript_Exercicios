@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando IMC</title>
+</head>
+<body>
+
+<h1>Vamos calcular o Seu indice de massa Corporal. </h1>
+<!--  
+a formula do IMC é peso dividido pelo quadrado da altura. -->
+
+<script>
+
+
+let pularLinha = function() {
+    document.write('<br>')
+};
+
+ let Mostrar = function(frase) {
+    document.write(frase)
+    pularLinha();
+};
+
+let CalcularIMC = function(altura,peso){
+    let IMC = peso/(altura*altura);
+    return IMC;
+
+}
+
+let nome = prompt ("Qual é o seu nome? ")
+
+let pesoDoUsuario = prompt (`${nome}, qual o seu Peso?`)
+let alturaDoUsuario = prompt (`${nome}, qual é sua Altura?`)
+let imcDoUsuario =  Math.round(CalcularIMC(alturaDoUsuario,pesoDoUsuario));
+
+Mostrar(` Olá ${nome}, O seu IMC é ${imcDoUsuario}`);
+//aqui estou declarando diretamente na criação da varivael que quero que o valor dela seja arrendoado para o maior número aproximado do resultado utilizadno o Math.round        
+
+
+// Mostrar("Meu imc é " + imc);
+// Mostrar("Ainda estou " + (imc - 18.5) + "pontos acima do limite da magreza.");
+// Mostrar("E Para a obseidade severa estou em uma distancia de " + (35- imc) + " pontos");
+
+
+// Mostrar ("Meu IMC é " + Math.round(imc));
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
