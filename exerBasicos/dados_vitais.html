@@ -13,15 +13,27 @@
 <h1>Quantos Dias você Já Viveu? </h1>
 
 
-<script>
-    let idade = prompt("Digite Sua idade?")
-    let dias = idade * 365
+<script> 
+let idade = prompt("Digite sua idade");
+let dias_vividos = calcular_dias(idade);
+let batimentos = calcular_batimentos(dias_vividos);
 
-    document.write(`Você viveu o total de ${dias} dias! <br>`)
+function calcular_dias(idade){
+    return idade * 365;
+}
+
+function calcular_batimentos(dias){
+    return dias * 24 * 60 * 80
+}
+
+document.write("o total de dias que você viveu foi " + dias_vividos + "<br>");
+document.write("Seu coração bateu " + batimentos + "Vezes");
 
 
-let batimentos = dias * 24 * 60 * 80;
-document.write(`Seu coração já bateu ${batimentos} Vezes. aguenta coraçãummm.`);
+
+
+
+
 
 
 

@@ -35,7 +35,16 @@ let pesoDoUsuario = prompt (`${nome}, qual o seu Peso?`)
 let alturaDoUsuario = prompt (`${nome}, qual é sua Altura?`)
 let imcDoUsuario =  Math.round(CalcularIMC(alturaDoUsuario,pesoDoUsuario));
 
+if (imcDoUsuario < 18.5){
+    Mostrar("Seu IMC indica que você está ABAIXO do peso.");
+} else if (imcDoUsuario > 35){
+    Mostrar("Seu IMC indica que você está ACIMA do peso")
+} else if (imcDoUsuario <=35 && imcDoUsuario >=18.5) {
+    Mostrar("Seu IMC está IDEAL!")
+}
+
 Mostrar(` Olá ${nome}, O seu IMC é ${imcDoUsuario}`);
+
 //aqui estou declarando diretamente na criação da varivael que quero que o valor dela seja arrendoado para o maior número aproximado do resultado utilizadno o Math.round        
 
 

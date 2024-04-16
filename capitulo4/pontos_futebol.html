@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pontos</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+function pularLinha (){
+    document.write("<br>")
+};
+
+function mostrar (frase) {
+    document.write(frase)
+    pularLinha()
+};
+
+function calcularPontos (vitorias,empates){
+    return (vitorias*3) + empates
+}
+//CADA VITORIA VALE 3 PONTOS E CADA EMPATE VALE 1
+
+let vitorias =parseInt(prompt("Quantos jogos o DMA futebol club venceu?"));
+let empates = parseInt(prompt("quantos jogos o DMA futebol club empatou?"));
+let vitorias_Rival =parseInt(prompt("quantas vitorias o Catinga Clube tem? "))
+let empates_Rival =parseInt (prompt("quantos empates o catinga clube tem? "))
+
+let pontos = calcularPontos(vitorias,empates)
+let pontos_Rival = calcularPontos(vitorias_Rival,empates_Rival)
+mostrar("Nosso time tem " + pontos + " pontos!");
+mostrar("Catinga clube tem " + pontos_Rival + " pontos")
+
+if (pontos > pontos_Rival) {
+    mostrar("Nosso time está indo MELHOR que o Catinga clube")
+} else if (pontos < pontos_Rival){
+    mostrar("Nosso time está PIOR que o Catinga Clube")
+} else if (pontos == pontos_Rival){
+    mostrar("estamos EMPATADOS")
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

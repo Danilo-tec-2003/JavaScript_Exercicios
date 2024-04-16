@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGO DE ADIVINHAÇÃO</title>
+</head>
+<body>
+
+
+
+<script>
+
+// let numero_pensado = Math.round(Math.random() *3);
+
+function sortear (N) {
+    let numero_sorteado =  Math.floor(Math.random() * (N+1));
+    return numero_sorteado}
+
+let numero_pensado = sortear(3)
+let palpite_usuario = prompt("qual número eu estou pensando? diga um palpite de 0 a 10 ");
+
+if (!Number.isNaN(Number(palpite_usuario))) {
+    
+let palpite_numero = parseInt(palpite_usuario);
+
+if(palpite_numero === numero_pensado) {
+    alert("VOCÊ ACERTOU!!!!")
+} else {
+    alert("ERROU MANÉ KKKKKKKK");
+
+    //DICAS
+if (palpite_numero > numero_pensado) {
+    alert("Chutou alto, passou longe")
+} else {
+    alert("chutou baixo, passou longe")
+}
+}
+} else {
+    alert("por favor, digite apenas Números.")
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>
