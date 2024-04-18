@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABUADA</title>
+</head>
+<body>
+
+<script>
+function Mostrar (frase) {
+    document.write(frase + "<br>")
+};
+
+let multiplicador = 1
+let numeroEscolhido = prompt("digite um número que você deseja ver a Tabuada.")
+numeroEscolhido = parseInt(numeroEscolhido)
+
+
+if (!isNaN(numeroEscolhido)) { //Verificando se o dado de entrada é um número
+while( multiplicador <= 10) {
+    Mostrar(numeroEscolhido + " X "+ multiplicador  + " = " + (numeroEscolhido * multiplicador));
+    multiplicador = multiplicador + 1;
+}
+} else { //mensgaem de erro caso o dado de entrada não seja um número
+    Mostrar("Somente número são aceitos, por favor Digite novamente");
+}
+
+//Criando a tabuada do 7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+    
+</body>
+</html>

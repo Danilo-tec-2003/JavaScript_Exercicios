@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COPA DO MUNDO</title>
+</head>
+<body>
+  <h1> Quando será a próxima copa do Mundo ?</h1>  
+  <h3>Bom, Sabemos que a copa do Mundo acontece de 4 em 4 anos e também sabemos que ela foi criada em 1930.</h3>
+  <h3>Gostaria de Saber se no ano de 2030 vai ter copa do mundo...</h3>
+
+
+
+
+
+
+
+<script>
+
+
+function Mostrar (frase) {
+    document.write(frase + "<br>")
+};
+
+let anoTexto = prompt("Informe o ano Inicial")
+let anoDeOlimpiada = parseInt(anoTexto)
+let anoLimite = anoDeOlimpiada + 4
+
+while(anoDeOlimpiada <= anoLimite) {
+    Mostrar(anoDeOlimpiada + "É o ano de Olimpiada");
+    anoDeOlimpiada += 4
+}
+Mostrar("esses foram os anos de olimpiadas até " + anoLimite);
+
+
+</script>
+</body>
+</html>
