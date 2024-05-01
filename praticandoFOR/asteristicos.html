@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAÇO DENTRO DE LAÇO</title>
+</head>
+<body>
+ <h1>vamos criar laços para automaitzar repetições?</h1>   
+
+ <script>
+
+
+// for(let linha = 0; linha < 3; linha++) {
+//     for(let coluna = 0; coluna < 10; coluna++) {
+//         document.write("*");
+//     }
+//     document.write("<br>");
+// }
+// Definição da função Mostrar para exibir uma frase na página
+function Mostrar(frase) {
+    document.write(frase + "<br>");
+}
+
+// Loop externo para iterar sobre as linhas
+// for (let linha = 1; linha <= 10; linha++) {
+//     let linhaAsteriscos = "";
+
+//     // Loop interno para iterar sobre as colunas e construir a linha de asteriscos
+//     for (let coluna = 1; coluna <= 10; coluna++) {
+//         linhaAsteriscos += "* "; // Adiciona um asterisco seguido de um espaço
+//     }
+
+//     // Exibe a linha de asteriscos na página usando a função Mostrar
+//     Mostrar(linhaAsteriscos);
+// }
+
+// let tamanho = prompt("Qual tamanho que você quer o quadrado?")
+// tamanho = parseInt(tamanho);
+
+// for(let linha= 1; linha <= tamanho; linha++){
+//     linhasAsteristicos = "";
+
+//     for(let coluna = 1; coluna <= tamanho;  coluna++){
+//         linhasAsteristicos += "*";
+//     }
+//     document.write()
+// }
+
+function Mostrar (frase) {
+    document.write(frase + "<br>")
+}
+
+
+respostaUser =parseInt(prompt("quantas vezes você quer que o * se repita?"))
+
+for(let i = 0; i < respostaUser; i++){
+    Mostrar("*")
+}
+
+
+
+
+
+</script>
+</body>
+</html>

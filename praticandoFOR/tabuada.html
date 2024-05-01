@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABUADA COM O FOR</title>
+</head>
+<body>
+ <h2>digite qual Tabuada você deseja ver:</h2>
+ 
+ <script>
+numDoUser = parseInt(prompt("você quer ver a tabuada de qual número? "))
+
+if(!isNaN(numDoUser)) {
+    console.log("VÁLIDO")
+} else {
+    alert("Entrada inválida. por favor digite um número.")
+}
+
+function Mostrar (frase){
+    document.write(frase + "<br>")
+}
+
+
+
+for(let i = 1; i<= 10; i++) {
+    Mostrar(numDoUser + " X " + i + " = " + (numDoUser * i));
+}
+
+
+ </script>
+</body>
+</html>

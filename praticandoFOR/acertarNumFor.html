@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o número 0.2</title>
+</head>
+<body>
+ <h2>tente adivinhar o número, dessa vez você terá mais chances!</h2>   
+</body>
+<script>
+
+
+let numeroPensado = Math.round(Math.random() * 1000);
+
+numeroDeTentativas = 1;
+while(numeroDeTentativas ==numeroPensado) {
+ let chute =  prompt("Estou pensando em um número. qual você acha que é?")
+    numeroDeTentativas++;
+
+if (chute ==numeroPensado) {
+    alert("Você acertou, parabéns! o Número pensado era " + numeroPensado)
+    break; //serve para quebrar o código, no caso se a condição desejada for alcançada o codigo não
+    //precisa de mais interação.
+} else if (chute>numeroPensado){
+    alert("seu chute foi maior do que o número pensado")
+} else if (chute< numeroPensado) {
+    alert("Seu número foi menor do que o número pensado")
+} else
+ {
+    alert("Você errou. será que ainda tem mais tentativas?")
+}
+numeroDeTentativas++;
+}
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÉDIA IDADE FAMILIARES</title>
+</head>
+<body>
+    <h2>Neste progama vou te perguntar qual a quantidade de familiares que você tem, qual a idade de cada um deles e por fim a média de idade entre os familiares</h2>
+
+<script>
+
+let totalDeFamiliares = prompt("quantos Familiares são?");
+let somaDeIdades = 0
+
+let numero = 1
+while(numero <= totalDeFamiliares) {
+    let idade = parseInt(prompt("Qual é a sua idade"))
+    somaDeIdades = somaDeIdades + idade;
+    numero++
+}
+
+let media = somaDeIdades / totalDeFamiliares;
+alert ("A média é: " + media)
+
+
+  
+  
+
+</script>
+    
+</body>
+</html>
